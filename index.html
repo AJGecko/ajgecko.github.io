@@ -27,10 +27,12 @@
         <div class="blockplaygame">
             <h3>Blockplay - WIP:</h3>
             <div>A platformer game made with python and pygame.</div>
-            <div><a href="https://blockplay-game.vercel.app" target="_blank" class="links">Web Version of Blockplay</a></div>
-            <div><a href="https://github.com/ajgecko/blockplay" target="_blank" class="links">Blockplay on Github</a></div>
+            <div>
+                <a href="https://blockplay-game.vercel.app" target="_blank" class="links"><button type="button">Play Blockplay</button></a>
+                <a href="https://github.com/ajgecko/blockplay" target = "_blank" class="links"><button type="button">Blockplay on Github</button></a>
+            </div>
         </div>
-        <div class="rootwardgame">   
+        <div class="rootwardgame">
             <h3>Rootward - WIP:</h3>
             <div>Currently in early development and not public.</div>
         </div>
@@ -39,7 +41,7 @@
     <hr>
 
     <div>
-        Me on <a href="https://github.com" target="_blank" class="links">Github</a>
+        Me on <a href="https://github.com/ajgecko" target="_blank" class="links">Github</a>
     </div>
     </div>
     <hr>
@@ -74,6 +76,10 @@
         color: #e0e0e0; /* light gray */
         text-align: center;
         font-family: Arial, sans-serif;
+    }
+
+    body::-webkit-scrollbar {
+        display: none; 
     }
     
     .header {
@@ -148,5 +154,15 @@
     }
     .accent-yellow {
         color: #ffeb3b; /* yellow */
+    }
+    button {
+        background-color: #ffeb3b; /* yellow */
+        color: #000000; /* black */
+        border: none;
+        margin: 0.2em;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        cursor: pointer;
+        font-size: 1em;
     }
 </style>
