@@ -20,10 +20,10 @@
         <br>
     </div>
     <div class="content">
-    <div>
-        <span style="display: inline-block; max-width: 80ch; overflow-wrap: break-word; word-break: break-word;">
-            <div class="text"><span class="accent-green">Hi I am AJGecko :)</span></div>
-            <div class="text">At least that's my online name. I'm a hobby game developer and I'd like to showcase my projects on this site.</div>
+    <div class="text">
+        <span style="display: inline-block; max-width: 75%; overflow-wrap: break-word; word-break: break-word;">
+            <div><span class="accent-green">Hi I am AJGecko :)</span></div>
+            <div>At least that's my online name. I'm a hobby game developer and I'd like to showcase my projects on this site.</div>
         </span>
     </div>
 
@@ -61,7 +61,7 @@
 
     <div class="stats">
         <div class="headline"><h2>My coding time:</h2></div>
-        <img width="700" style="max-width: 100%; height: auto;" src="https://github-readme-stats.hackclub.dev/api/wakatime?username=7554&api_domain=hackatime.hackclub.com&theme=dark&custom_title=Hackatime+Stats&layout=compact&cache_seconds=2&langs_count=10" alt="Hackatime Stats" />
+        <img width="700" style="max-width: 98%; height: auto;" src="https://github-readme-stats.hackclub.dev/api/wakatime?username=7554&api_domain=hackatime.hackclub.com&theme=dark&custom_title=Hackatime+Stats&layout=compact&cache_seconds=2&langs_count=10" alt="Hackatime Stats" />
     </div>
     <br>
     <br>
@@ -136,10 +136,14 @@
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 99;
     }
 
     .text {
         margin: 1em;
+        display: flex;
+        justify-content: center;
+        scale: 1.2;
     }
 
     .headline {
@@ -154,10 +158,14 @@
     }
 
     .blockplaygame, .rootwardgame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-family: 'Arial', sans-serif;
         background-color: rgba(50, 50, 50,1); /* medium dark gray */
         width: 80%;
-        margin: 0.5em auto; 
+        scale: 1.2;
+        margin: 3em auto; 
         padding: 1em;
         border-radius: 2em;
         color: #e0e0e0;
@@ -172,6 +180,7 @@
         display: block;
     }
     .content {
+        max-width: 100ch;
         width: 80%;
         margin: 0 auto;
         color: #e0e0e0;
@@ -183,6 +192,7 @@
         padding: 2%;
         background-color: rgba(30, 30, 30,0.4);
         border-radius: 2em;
+        max-width: 100ch;
         width: 80%;
         margin: 0 auto;
         color: #e0e0e0;
