@@ -22,8 +22,8 @@
     <div class="content">
     <div>
         <span style="display: inline-block; max-width: 80ch; overflow-wrap: break-word; word-break: break-word;">
-            <div><span class="accent-green">Hi i am AJGecko :)</span></div>
-            <div>At least that's my online name. I'm a hobby game developer and I'd like to showcase my projects on this site.</div>
+            <div class="text"><span class="accent-green">Hi I am AJGecko :)</span></div>
+            <div class="text">At least that's my online name. I'm a hobby game developer and I'd like to showcase my projects on this site.</div>
         </span>
     </div>
 
@@ -31,11 +31,11 @@
     
 
     <div>
-        <h2 class="games">My Games:</h2>
+        <h2 class="headline games">My Games:</h2>
         <div class="blockplaygame">
             <h3>Blockplay - WIP:</h3>
             <div>A platformer game made with python and pygame.</div>
-            <div>
+            <div style=" margin-top: 1em;">
                 <a href="https://blockplay-game.vercel.app" target="_blank" class="links"><button type="button">Play Blockplay</button></a>
                 <a href="https://github.com/ajgecko/blockplay" target = "_blank" class="links"><button type="button">Blockplay on Github</button></a>
             </div>
@@ -48,9 +48,10 @@
 
     <hr>
 
-    <div>
+    <div style="text-align: center; scale: 1.2;">
         Me on <a href="https://github.com/ajgecko" target="_blank" class="links">Github</a>
     </div>
+    <br>
     </div>
 
     <br>
@@ -59,16 +60,18 @@
     <br>
 
     <div class="stats">
-        <h2>My coding time:</h2>
+        <div class="headline"><h2>My coding time:</h2></div>
         <img width="700" style="max-width: 100%; height: auto;" src="https://github-readme-stats.hackclub.dev/api/wakatime?username=7554&api_domain=hackatime.hackclub.com&theme=dark&custom_title=Hackatime+Stats&layout=compact&cache_seconds=2&langs_count=10" alt="Hackatime Stats" />
     </div>
     <br>
     <br>
     <div class="end">
-    <div class="hobby-notice">
+    <div class="hobby-notice" style="text-align: center;">
     This website is a private, non-commercial hobby project by AJGecko.
     </div>
+    <div style="text-align: center; margin-top: 0.5em;">
     <a href="" target="_top" class="links">To the top</a>
+    </div>
     </div>
 </body>
 </html>
@@ -85,10 +88,12 @@
     }
 
     body {
-        background-color: #2b2b2b;
+        
         color: #e0e0e0;
-        text-align: center;
         font-family: Arial, sans-serif;
+        text-align: justify;
+        hyphens: auto;
+
         background-color: #0b0f19;
         background-image: 
             radial-gradient(circle at 200px 200px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
@@ -111,6 +116,7 @@
     
     .header {
         font-family: Roboto, sans-serif;
+        text-align: center;
         color: #ffffff; /* white */
 
         background-color: rgba(50, 50, 50, 0.4); 
@@ -130,6 +136,16 @@
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .text {
+        margin: 1em;
+    }
+
+    .headline {
+        font-family: 'Arial', sans-serif;
+        color: #ffffff; /* white */
+        text-align: center;
     }
 
     .games {
@@ -152,7 +168,7 @@
         border-top: 2px solid #ffffff; /* white */
         height: 0;
         width: 100%;                
-        margin: 3em auto;           
+        margin: 1.5em auto;           
         display: block;
     }
     .content {
@@ -170,6 +186,7 @@
         width: 80%;
         margin: 0 auto;
         color: #e0e0e0;
+        text-align: center;
     }
     .end {
         background-color: #212121; /* darker gray */
