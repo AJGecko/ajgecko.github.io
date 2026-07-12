@@ -79,6 +79,7 @@
     <div class="stats">
         <div class="headline"><h2>My coding time:</h2></div>
         <img width="700" style="max-width: 100%; height: auto;" src="https://github-readme-stats.hackclub.dev/api/wakatime?username=7554&api_domain=hackatime.hackclub.com&theme=dark&custom_title=Hackatime+Stats&layout=compact&cache_seconds=2&langs_count=10" alt="Hackatime Stats" />
+        <img width="700" style="max-width: 100%; height: auto;" src="https://github-readme-stats.hackclub.dev/api/wakatime?username=7554&api_domain=hackatime.hackclub.com&theme=dark&custom_title=Hackatime+Stats&layout=compact&cache_seconds=2&langs_count=10" alt="Hackatime Stats" />
     </div>
     <br>
     <br>
@@ -223,10 +224,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+        scale: 1.2;
         scale: 1.2;
         font-family: 'Arial', sans-serif;
         background-color: rgba(50, 50, 50,1); /* medium dark gray */
+        width: 70%;
+        margin: 0.5em auto; 
+        padding: 1.5em;
         width: 70%;
         margin: 0.5em auto; 
         padding: 1.5em;
@@ -291,6 +298,71 @@
         font-size: 1em;
     }
 </style>
+
+<script>
+    const track = document.getElementById('sliderTrack');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    let currentIndex = 0;
+    let isScrolling = false; 
+
+    function moveSlider() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        moveSlider();
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        moveSlider();
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', nextSlide);
+    document.getElementById('prevBtn').addEventListener('click', prevSlide);
+
+    track.addEventListener('wheel', (e) => {
+        if (Math.abs(e.deltaX) < 10 && Math.abs(e.deltaY) < 10) return;
+        
+        e.preventDefault(); 
+        
+        if (isScrolling) return;
+        isScrolling = true;
+
+        if (e.deltaX > 0 || e.deltaY > 0) {
+            nextSlide();
+        } else {
+            prevSlide();
+        }
+
+        setTimeout(() => { isScrolling = false; }, 700);
+    }, { passive: false });
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleGesture();
+    }, { passive: true });
+
+    function handleGesture() {
+        const threshold = 50;
+        
+        if (touchStartX - touchEndX > threshold) {
+            nextSlide();
+        }
+        
+        if (touchEndX - touchStartX > threshold) {
+            prevSlide();
+        }
+    }
+</script>
 
 <script>
     const track = document.getElementById('sliderTrack');
