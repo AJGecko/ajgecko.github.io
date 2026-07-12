@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJs Website - Games</title>
+</head>
+<body>
+    <header class="header">
+        <h1>AJGecko - Games</h1>
+        <div style="background-color: #3c3c3c; border-radius: 12px 12px 0 0; outline-color: rgb(128, 128, 128); outline-width: 2px; outline-style: solid;">
+        <nav style="margin: 0.5em;">
+            <a href="../index.html" target="_parent" class="links">Home</a> | 
+            <a href="" class="links">Games</a> 
+        </nav>
+        </div>
+    </header>
+    <div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="content">
+    <div class="text">
+        <span style="display: inline-block; max-width: 70%; overflow-wrap: break-word; word-break: break-word;">
+            <div>Here you can find all the games I have made. Have fun playing them!</div>
+            <div>You can click on the info button to get more information about the game.</div>
+        </span>
+    </div>
+    </div>
+    <hr>
+    <div style="text-align: center;">
+    <h1>Playable</h1>
+    </div>
+
+    <ul class="games">
+        <li>
+            <div class="banner-card">
+                <div style="width: 100%;">   
+                <a href="https://blockplay-game.vercel.app/" target="_blank" class="game-link">
+                    <div class="banner-img-wrapper">
+                        <img src="gamebanner/blockplay_banner.png" alt="banner" class="banner-img">
+                    </div>
+                </a>
+                </div>   
+                <div class="banner-bar">
+                    <div style="font-size: larger">
+                    <a href="https://blockplay-game.vercel.app/" target="_blank" style="position: relative;"><button class="bbutton">Play</button></a>
+                    </div>
+                    
+                    <div>
+                    <button class="bbutton" style="scale: 1;" onclick="info('blockplay')";><img style="height: 30px; width: auto;" src="icons/!.svg" alt="infobutton"></button>
+                    <a href="https://github.com/ajgecko/blockplay" target="_blank" style="position: relative;" class="game"><button class="bbutton" style="scale: 1;"><img style="height: 30px; width: auto;" src="icons/githublogo.svg" alt="Github"></button></a>
+                    </div>
+                </div>
+                <div id="infoblockplay" class="info">
+                    <h2>Blockplay - WIP</h2>
+                    <p>Blockplay is a simple platformer game where you can move and jump around. The goal is reach the finish line as fast as possible. The pakour is randomly generated.</p>
+                    <div style="background-color: #343434; border-radius: 1em; padding: 1em; margin-top: 1em; line-height: 1.5em;">
+                    <div>Programing Language: Python</div>
+                    <div>Additional Libraries: Pygame</div>
+                    <div>Platform: Web</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="banner-card">
+                <div style="width: 100%;">   
+                    <a href="https://microstudio.io/AJGecko/stoneclicker/" target="_blank" class="game-link">
+                        <div class="banner-img-wrapper banner-text-placeholder">
+                            <div class="banner-placeholder-text">Stoneclicker</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="banner-bar">
+                    <div style="font-size: larger">
+                    <a href="https://microstudio.io/AJGecko/stoneclicker/" target="_blank" style="position: relative;"><button class="bbutton">Play</button></a>
+                    </div>
+                    
+                    <div>
+                    <button class="bbutton" style="scale: 1;" onclick="info('stoneclicker')";><img style="height: 30px; width: auto;" src="icons/!.svg" alt="infobutton"></button>
+                    <a href="https://github.com/ajgecko/stoneclicker" target="_blank" style="position: relative;" class="game"><button class="bbutton" style="scale: 1;"><img style="height: 30px; width: auto;" src="icons/githublogo.svg" alt="Github"></button></a>
+                    </div>
+                    </div>
+                <div id="infostoneclicker" class="info">
+                    <h2>Stoneclicker</h2>
+                    <p>Stoneclicker is a simple clicker game where you can click on a stone to earn stone. The goal is to reach the highest score possible.</p>
+                    <div style="background-color: #343434; border-radius: 1em; padding: 1em; margin-top: 1em; line-height: 1.5em;">
+                        <div>Programing Language: microScript 2.0</div>
+                        <div>Game Engine: MicroStudio</div>
+                        <div>Platform: Web</div>
+                    </div>
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+
+    <hr>
+
+    <div style="text-align: center;">
+    <h1>Not Ready Yet</h1>
+    </div>
+
+    <ul class="games">
+        <li>
+            <div class="banner-card">
+                <div style="width: 100%;">   
+                    <div class="banner-img-wrapper banner-text-placeholder">
+                        <div class="banner-placeholder-text">Roodward</div>
+                    </div>
+                </div>
+                <div class="banner-bar">
+                    <div style="font-size: larger">
+                    <button class="bbutton not">Play</button>
+                    </div>
+                    
+                    <div>
+                    <button class="bbutton" style="scale: 1;" onclick="info('rootward')";><img style="height: 30px; width: auto;" src="icons/!.svg" alt="infobutton"></button>
+                    <button class="bbutton not" style="scale: 1;"><img style="height: 30px; width: auto;" src="icons/githublogo.svg" alt="Github"></button>
+                    </div>
+                    </div>
+                <div id="inforootward" class="info">
+                    <h2>Rootward - WIP</h2>
+                    <p>Rootward is a dungeon crawler game where you can explore dungeons and fight monsters. More Infos will follow.</p>
+                    <div style="background-color: #343434; border-radius: 1em; padding: 1em; margin-top: 1em; line-height: 1.5em;">
+                        <div>Programing Language: microScript 2.0</div>
+                        <div>Game Engine: MicroStudio</div>
+                        <div>Framework: Hummingbird (Selfmade)</div>
+                        <div>Platform: Web, Windows, Linux </div>
+                    </div>
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+    <br><br>
+    <div class="end">
+        <div class="hobby-notice" style="text-align: center;">
+            This website is a private, non-commercial hobby project by AJGecko.
+        </div>
+        <div style="text-align: center; margin-top: 0.5em;">
+            <a href="" target="_top" class="links">To the top</a>
+        </div>
+    </div>
+</body>             
+</html>
+
+<style>
+    .banner-img-wrapper {
+        overflow: hidden;   
+        display: block;
+    }
+
+    .banner-text-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;       
+        text-align: center;  
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: rgb(255, 255, 255);        
+    }
+
+    .banner-img {
+        width: 100%;        
+        height: 100%;       
+        object-fit: cover;  
+        object-position: center;
+        aspect-ratio: 16 / 9;
+    }
+
+    .banner-text-placeholder {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .banner-placeholder-text {
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    ul {
+        display: flex !important;
+        flex-direction: row !important; /* Erzwingt die Reihe */
+        flex-wrap: wrap !important;     /* Erzwingt den Umbruch */
+        justify-content: center !important;
+        align-items: center !important;
+        list-style-type: none !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    body {
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
+        hyphens: auto;
+        background-color: #0b0f19;
+        background-image: 
+            radial-gradient(circle at 200px 200px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 1000px 200px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 200px 1000px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 1000px 1000px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 600px 600px, rgba(195, 180, 9, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at -200px 600px, rgba(195, 180, 9, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 600px -200px, rgba(195, 180, 9, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at -200px -200px, rgba(195, 180, 9, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 400px 400px, rgba(132, 204, 22, 0.4) 0%, transparent 250px);
+        background-repeat: repeat;
+        background-size: 800px 800px;
+        background-attachment: fixed;
+    }
+
+    body::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .header {
+        font-family: Roboto, sans-serif;
+        text-align: center;
+        color: #ffffff;
+        background-color: rgba(50, 50, 50, 0.4); 
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 3px solid rgba(121, 121, 121, 0.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5em auto;
+        padding: 0;
+        border-radius: 12px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+    }
+
+    .text {
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+        scale: 1.2;
+        text-align: center;
+    }
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        color: #e0e0e0;
+        background-color: rgba(30, 30, 30,0.4);
+        border-radius: 2em;
+        padding: 2%;
+    }
+
+    .links {
+        color: #ffeb3b;
+    }
+    .links:hover {
+        color: #ffff8c;
+    }
+
+
+    .games {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .games li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex: 1 1 500px;
+        max-width: 500px;
+    }
+
+    .game-link {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .banner-card {
+        background-color: #3c3c3c;
+        border: 3px solid rgba(121, 121, 121, 0.4);
+        border-radius: 1em;
+        overflow: hidden; 
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+        transform-origin: center center;
+        min-width: 300px;
+        width: 100%;
+        margin: 1em;
+    }
+
+    .banner-bar {
+        width: 100%;
+        height: 100%;
+        background-color: #2a2a2a; 
+        padding: 15px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;         
+        gap: 10px;
+        border-top: 1px solid rgba(121, 121, 121, 0.2); 
+    }
+
+    
+
+    button {
+        background-color: #ffeb3b; /* yellow */
+        color: #000000; /* black */
+        border: none;
+        padding: 0.5em 1em;
+        margin: 0.5em 0;
+        border-radius: 0.5em;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    .bbutton {
+        margin-left: 0.5em; 
+    }
+    .bbutton:hover {
+        background-color: #ffff8c; /* lighter yellow */
+    }
+
+    .bbutton.not {
+        margin-left: 0.5em;
+        background-color: #9e9e9e; /* gray */
+         
+    }
+
+    .info {
+        display: none; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1.5em;
+    }
+
+    .info.aktiv {
+        display: block;
+    }
+
+    hr  {
+        border: 2px solid #555;
+        margin: 2em 0;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1em;
+    }
+
+    .end {
+        background-color: #212121; /* darker gray */
+        padding: 3%;
+        color: #e0e0e0;
+    }
+
+</style>
+
+<script>
+    function info(name) {
+        document.getElementById('info' + name).classList.toggle('aktiv');
+    }
+</script>
