@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Site not found</title>
+</head>
+<body>
+    <div class="notfound">
+        Site not found. :(
+        <br>
+        <a href="./index.html"> Go back Home</a>
+    </div>
+</body>
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    body {
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
+        text-align: justify;
+        hyphens: auto;
+
+        background-color: #0b0f19;
+        background-image: 
+            radial-gradient(circle at 200px 200px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 1000px 200px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 200px 1000px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 1000px 1000px, rgba(0, 170, 0, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 600px 600px, rgba(195, 180, 9, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at -200px 600px, rgba(195, 180, 9, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 600px -200px, rgba(195, 180, 9, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at -200px -200px, rgba(195, 180, 9, 0.6) 0%, transparent 300px),
+            radial-gradient(circle at 400px 400px, rgba(132, 204, 22, 0.4) 0%, transparent 250px);
+        background-repeat: repeat;
+        background-size: 800px 800px;
+        background-attachment: fixed;
+    }
+
+    body::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .notfound {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 2em;
+        background-color: rgba(50, 50, 50, 0.4);
+        padding: 1em;
+        border-radius: 1em;
+    }
+
+    a {
+        color: #d4ff00;
+        text-decoration: underline;
+    }
+    a:hover {
+       color: #e0ff48;
+    }
+</style>

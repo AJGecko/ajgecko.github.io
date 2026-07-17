@@ -8,11 +8,12 @@
 </head>
 <body>
     <header class="header">
-        <h1>AJGecko - Games</h1>
+        <h1>AJGecko - Home</h1>
         <div style="background-color: #3c3c3c; border-radius: 12px 12px 0 0; outline-color: rgb(128, 128, 128); outline-width: 2px; outline-style: solid;">
         <nav style="margin: 0.5em;">
             <a href="" class="links">Home</a> | 
-            <a href="games/" class="links">Games</a> 
+            <a href="game/" class="links">Games</a> |
+            <a href="gallery/" class="links">Gallery</a>
         </nav>
         </div>
     </header>
@@ -26,10 +27,7 @@
             <div>At least that's my online name. I'm a hobby game developer and I'd like to showcase my projects on this site.</div>
         </span>
     </div>
-
     <hr>
-    
-
     <div>
         <h2 class="headline games">My Projects:</h2>
         <div class="projectssection">
@@ -43,7 +41,6 @@
                         <h3>Games:</h3>
                         <div>I build games in my free time. You can find some of them in the games section. </div>
                         <div style=" margin-top: 1em; text-align: center;">
-                            
                             <a href="./games" class="links"><button type="button">Games</button></a>
                         </div>
                     </div>
@@ -54,6 +51,15 @@
                         <div>A simple web app for generating QR codes with a few settings.</div>
                         <div style=" margin-top: 1em; text-align: center;">
                             <a href="https://ajgecko.github.io/qrcodegen/" target = "_blank" class="links"><button type="button">Try out</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="blockplaygame">
+                        <h3>Other:</h3>
+                        <div>Sometimes I create things using Blender or other software. Some of the results are in the gallery.</div>
+                        <div style=" margin-top: 1em; text-align: center;">
+                            <a href="./gallery" class="links"><button type="button">Gallery</button></a>
                         </div>
                     </div>
                 </div>
@@ -88,6 +94,8 @@
     </div>
     <div style="text-align: center; margin-top: 0.5em;">
     <a href="" target="_top" class="links">To the top</a>
+    <footer style="margin-top: 1em;">
+        <p><a href="./privacypolicy" class="links">Privacy Policy</a></p>
     </div>
     </div>
 </body>
@@ -105,7 +113,6 @@
     }
 
     body {
-        
         color: #e0e0e0;
         font-family: Arial, sans-serif;
         text-align: justify;
@@ -223,16 +230,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        scale: 1.2;
         scale: 1.2;
         font-family: 'Arial', sans-serif;
         background-color: rgba(50, 50, 50,1); /* medium dark gray */
-        width: 70%;
-        margin: 0.5em auto; 
-        padding: 1.5em;
         width: 70%;
         margin: 0.5em auto; 
         padding: 1.5em;
@@ -297,71 +298,6 @@
         font-size: 1em;
     }
 </style>
-
-<script>
-    const track = document.getElementById('sliderTrack');
-    const totalSlides = document.querySelectorAll('.slide').length;
-    let currentIndex = 0;
-    let isScrolling = false; 
-
-    function moveSlider() {
-        track.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        moveSlider();
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        moveSlider();
-    }
-
-    document.getElementById('nextBtn').addEventListener('click', nextSlide);
-    document.getElementById('prevBtn').addEventListener('click', prevSlide);
-
-    track.addEventListener('wheel', (e) => {
-        if (Math.abs(e.deltaX) < 10 && Math.abs(e.deltaY) < 10) return;
-        
-        e.preventDefault(); 
-        
-        if (isScrolling) return;
-        isScrolling = true;
-
-        if (e.deltaX > 0 || e.deltaY > 0) {
-            nextSlide();
-        } else {
-            prevSlide();
-        }
-
-        setTimeout(() => { isScrolling = false; }, 700);
-    }, { passive: false });
-
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    track.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-
-    track.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleGesture();
-    }, { passive: true });
-
-    function handleGesture() {
-        const threshold = 50;
-        
-        if (touchStartX - touchEndX > threshold) {
-            nextSlide();
-        }
-        
-        if (touchEndX - touchStartX > threshold) {
-            prevSlide();
-        }
-    }
-</script>
 
 <script>
     const track = document.getElementById('sliderTrack');
